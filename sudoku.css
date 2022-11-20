@@ -1,0 +1,89 @@
+/* the body styles everything in the 'body' tag of html doc */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+#headers {
+    color:azure;
+}
+
+/* styles the hr line; shorten so it doesn't spread across whole screen */
+hr {
+    width: 500px;
+    color: azure;
+}
+
+/* access the h2 errors item using the id (#id) */
+#errors {
+    color: crimson;
+}
+
+/* 9x9 board where each board tile is 50px */
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    margin: 0 auto; /*centers the board*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* add a tile class for the style for each board tile */
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* one centers HORIZONTAL other VERTICAL */
+    align-items: center;
+
+}
+
+#digits {
+    /* width 450px bc 9 digits along line. height 50px bc only 1 line of digits */
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*styling tiles in the digits portion*/
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid darkgray;
+    margin: 2px;
+
+    /* Text */
+    font-size: 20px; 
+    color:beige;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* one centers HORIZONTAL other VERTICAL */
+    align-items: center;
+}
+
+.number-selected {
+    background-color: crimson;
+}
+
+/* styling for the staring colors on the board */
+.tile-start {
+    background-color: whitesmoke;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}

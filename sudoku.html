@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8"> <!--defines character set the page will use, UTF-8 is the standard-->
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no"> <!--defines viewport-->
+        <title>Epsilon</title>
+
+        <link rel="stylesheet" href="sudoku.css"> <!--links stylesheet-->
+        <script src="sudoku.js"></script> <!--links javascript-->
+    </head>
+
+    <body>
+        <div id="headers">
+            <h1>Sudoku</h1>
+            <h3>Solve for a surprise.</h3>
+        </div> 
+            <hr> <!--a line under the title-->
+            <h2 id="errors">0</h2> <!--the error counter. Adding 'id' lets you get the item in js-->
+        
+
+        <!--9x9 board-->
+        <div id="board"></div> <!--div tag acts as a container for html elements which can then be styled with css or manipulated with js-->
+        <br> <!--adds a break between JS-controlled board and choosable numbers-->
+        <div id="digits"></div>
+
+    </body>
+
+</html>
